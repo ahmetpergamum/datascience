@@ -1,0 +1,133 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Python'a Giris\n",
+    "## Python Temelleri"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Q1: \n",
+    "Bitcoin'in iyi kazandırdığı 2017 yılı sonunda yatırım yaptığınızı farz edelim. Günlük ortalama %12 artan bitcoine 1000$ yatırmış olsaydınız bir hafta sonunda paranız ne kadar olurdu?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bir hafta sonunda toplam para: 2210.6814 $\n"
+     ]
+    }
+   ],
+   "source": [
+    "# capital at the beginning in $\n",
+    "capital = 1000\n",
+    "\n",
+    "# %12 daily gain in one week\n",
+    "for i in range(7):\n",
+    "    capital *= 1.12\n",
+    "    \n",
+    "print('Bir hafta sonunda toplam para: {:.4f} $'.format(capital))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Q2:\n",
+    "Tırnak içindeki metni Python ile yazdırın. Ancak rakamlar değişkenlerden gelmeli. Metin uzun olduğu için iki satıra yazmayı düşünebilirsiniz: \"Hafta başında 1000 dolarlık bitcoin aldığımızda günde ortalama %12 kazançla, bir hafta sonunda 1210.68 dolar kazanırdık\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hafta başında 1000 dolarlık bitcoin aldığımızda\n",
+      "günde ortalama %12 kazançla,\n",
+      "bir hafta sonunda 1210.68 dolar kazanırdık\n"
+     ]
+    }
+   ],
+   "source": [
+    "capital = 1000\n",
+    "percentage = 12\n",
+    "gain = 1210.68\n",
+    "\n",
+    "print(\"\"\"Hafta başında {} dolarlık bitcoin aldığımızda\n",
+    "günde ortalama %{} kazançla,\n",
+    "bir hafta sonunda {} dolar kazanırdık\"\"\".format(capital, percentage, gain))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Q3:\n",
+    "Kullanıcıdan dosya adını alan ve bu dosya adına \"py\" uzantısı ekleyerek ekrana yazdıran bir kod yazınız."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Dosya adi giriniz :  asd\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      ".py uzantili dosya adi: \n",
+      "asd.py\n"
+     ]
+    }
+   ],
+   "source": [
+    "filename = input('Dosya adi giriniz : ')\n",
+    "\n",
+    "print('.py uzantili dosya adi: \\n' + filename + '.py')"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
