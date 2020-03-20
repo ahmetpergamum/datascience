@@ -1,2 +1,2 @@
 # datascience
-Datascience related files
+Data science endeavor notebooks.
