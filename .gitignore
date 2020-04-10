@@ -1,5 +1,6 @@
 03_exploratory_analysis/test.ipynb
 test/
+lectures/
 test/*
 .ipynb_checkpoints
 library/__pycache__
