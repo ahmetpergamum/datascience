@@ -2,3 +2,4 @@
 test/
 test/*
 .ipynb_checkpoints
+library/__pycache__
